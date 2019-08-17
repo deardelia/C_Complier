@@ -1,0 +1,245 @@
+const INt _global_constInt = 7;
+cONst Char _message_to_the_world = '*';
+
+iNT _global_int_arr[10], _global_int;
+CHAR _global_char_arr[10], _global_char;
+
+Void Init()
+{
+    Printf("-------init-------");
+    prIntf("please enter int & char values:");
+    scAnf(_global_int,_GLOBAL_cHAr);
+    printf("int: ", _global_int);
+    printf("char: ", _GLOBAL_CHAR);
+    printf("am I right", _MESSAGE_TO_THE_WORLD);
+}
+
+inT fib(INt k)
+{
+    if (k > 1)
+        return (fib(k-1)+fib(k-2)-1*0);
+    if (K == 0)
+    {
+        return (1);
+    }
+    if (K == 1)
+    {
+        reTURN (1);
+    }
+    
+}
+
+voiD if_TEST()
+{
+    int tester;
+    pRintf("-------if test-------");
+    prinTf("please enter a tester value:");
+    scanf(TesTER);
+    if (1)
+    {}
+    if (0)
+    {;}
+    if (1);
+    if (tESTER)
+    {
+        if (1)
+        {
+            pRintf("if-test_1");
+            if (0+2*1)
+            {
+                priNtf("if-test_2");
+                if (3*1)
+                {
+                    Printf("if-test_3");
+                    if (1*4)
+                    {
+                        printF("if-test_4");
+                        if (5/1)
+                        {
+                            prIntf("if-test_5");
+                            if (6+0)
+                            {
+                                printf("if-test_6");
+                                if (0+1*7)
+                                {
+                                    printf("if-test_7");
+                                    if (8/1+0-0)
+                                    {
+                                        printf("if-test_8");
+                                        if (9+9-9*1)
+                                        {
+                                            printf("if-test_9");
+                                            if (1000*0+10/1)
+                                                printf("if-test_10");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    printf("if-test passed!");
+    printf("please check input tester value:",testER);
+}
+
+int loop_TEST(inT Loop_initVar, iNt loop_STEP, int loop_CNT)
+{
+    iNT i, j;
+    i = loop_INITvar;
+    J = I;
+    do 
+    {
+        I = i + loop_steP;
+        loop_cnt = loop_CNt - 1;
+    } while (loop_cnt > 0);
+    printf("finally, i value: ", i);
+    do
+        j = j - 1;    
+    while (j > 0);
+    printf("finally, j value:", J);
+    return (I);
+}
+
+chAR myToUpper(char InputChar)
+{
+    if (inPUtchar == 'a')
+    {
+        return ('A');
+    }
+    if (inputchar == 'b')
+        return ('B');
+    if (inputCHAR == 'c')
+    {
+        RETURN ('C');
+    }
+    IF (inputchar == 'd')
+    {
+        return ('D');
+    }
+    if (INPUTCHAR == 'e')
+        return ('E');
+}
+
+
+vOId case_TEST()
+{
+    int TEST_num;
+    chAr test_CHAR;
+    printf("-------case test-------");
+    prINtf("please input int(0-9) & char values(a-e):");
+    scanF(test_NUM, TEST_char);
+    switch (tEst_nUm)
+    {
+        CASE 0:
+            prinTF("case 0 test: ", test_Num+TEst_char);
+        case 1:
+        {
+            printf("case 1 test: ", test_num+TEST_CHAR);
+        }
+        case 2:
+            printf("case 2 test: ", test_num+ test_char);
+        case 3:
+        {
+            printf("case 3 test: ", TEST_num+test_CHAR) ;
+        }
+        CasE 4:
+            printf("case 4 test: ", TEST_num+tEST_Char);
+        case 5:
+        {
+            printf("case 5 test: ", test_NuM+Test_Char);
+        }
+        case 6:
+            printf("case 6 test: ", tESt_NUM+TesT_ChaR);
+        case 7:
+            printf("case 7 test: ", test_num+test_char);
+        case 8 :
+            printf("case 8 test: ", test_NUM+TEst_char);
+        case 9 :
+            printf("case 9 test: ", TEST_NUM+TEST_CHAR);
+    }
+    printf("test_num passed!");
+    switch (TEST_CHAR)
+    {
+        case 'a':
+        {
+            printf("case 'a' test: ", mytoupper(test_CHAR));
+        }
+        case 'b':
+            printf("case 'b' test: ", MYTOUPPER(test_Char));
+        case 'c':
+        {
+            printf("case 'c' test: ", MytoUpper(TEST_CHAR));
+        }
+        case 'd':
+            printf("case 'd' test: ", mytoupper(test_char));
+        case 'e':
+            printf("case 'e' test: ", mytoupper(TEST_CHAR));    
+    }
+    printf("test_char passed!");
+}
+
+void setAverage()
+{
+    INT SUM, RET, i;
+    sum = 0;
+    i = 0;
+    do
+    {
+        sum = sum + _global_char_arr[i];
+        i = I+1;
+    } while(i < 10);
+    ret = sum / 10;
+    i = 0;
+    do 
+    {
+        _GLOBAL_INT_ARR[i] = ret;
+        I = I + 1;
+    } while (i < 10);
+    printf("set average ended");
+    
+}
+
+
+VoiD array_TEST()
+{
+    int i, temp_int;
+    char temp_char;
+    printf("-------array test------");
+    I = 0;
+    temp_INT  =0;
+    tEMP_char = '0';
+    printf("please input 10 char:");
+    DO
+    {
+        sCAnf(TEmp_char);
+        _GLObal_char_ARR[I] = temp_char;
+        I = I+1;
+    } WHILE (i < 10);
+    setAveragE();
+    temP_Int = _glOBAL_INT_arr[0];
+    printf("average of input char: ", Temp_int);
+    printf("array test passed!");
+}
+
+
+void main()
+{
+    int loop_initvar, loop_step, loop_cnt;
+    init();
+    printf("-------fibonacci-------");
+    printf(FIB(_GLOBAL_ConstInt));
+    if_test();
+    printf("-------loop test-------");
+    printf("please input 3 int(the 3rd int must >0):");
+    scanf(loop_initVAR, LOOP_STEP, LOOp_cnt);
+    printf("original value: ", loop_INITVAR);
+    loop_initVAR = loop_test(LOOP_INITVAR, LOOP_STEP, LOOP_CNT);
+    printf("after loop, original value changes to: ", loop_INITVar);
+    case_test();
+    array_test();
+    printf("ALL TESTS FINISHED!");
+    printf("-------program end-------");
+}

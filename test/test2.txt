@@ -1,0 +1,250 @@
+const int  min=-1000;
+const char b='B', one='1';
+const int c=1,d=2;
+
+int e,f;
+char g;
+
+
+void test_constdecl_constdef(){
+    const int op6=1,op7=2,op8=3;
+    const int op9=4,op10=5;
+    const char c1='a',c2='b',c3='c';
+
+    printf("test_constdecl_constdef success!\n");
+
+}
+
+void test_vardecl_vardef(){
+    int x,y,z;
+    int m,n;
+    char p,q,r;
+
+    printf("test_vardecl_vardef success!\n");
+}
+
+
+int test_intfunc(int var1,int var2)
+{
+	int result;
+	result = var1 + var2;
+    return (result);
+}
+
+char test_charfunc(char var){
+    g=var+2;
+    return (g);
+}
+
+
+
+void test_voidfunc(int var1)
+{
+    printf("test_voidfunc success: var1=",var1);
+}
+
+
+void test_scanf()
+{
+    int i,j;
+    scanf(i,j);
+    printf(i+j);
+    printf("test_scanf success!\n");
+}
+
+void test_case1(int var1)
+{
+    char x;
+    switch(var1+1){
+        case 1:x='+';
+        case 2:x='-';
+        case 3:x='*';
+        case 4:x='/';
+    }
+    if(x=='/')
+    {
+        printf("test_case1 success!\n");
+    }
+    if(x!='/')
+    {
+        printf("test_case1 failed!\n");
+    }
+}
+
+void test_case2(int count){
+	int x,y,z,i;
+	char op;
+	printf("scanf test_case2 number:\n");
+	scanf(x,y);
+	i=0;
+	do
+	{
+		printf("input an operator: char::\n");
+		scanf(op);
+		switch(op)
+		{
+			case'+':{
+				z=x+y;
+				printf("result is ",z);
+			}
+			case'-':{
+				z=x-y;
+				printf("result is ",z);
+			}
+			case'*':printf("result is ",x*y);
+			case'/':printf("result is ",x/y);
+		}
+		i=i+1;
+	}
+	while(i<=count)
+	z=x+y;
+	printf("x+y=",z);
+	z=-x+y;
+	printf("-x+y=",z);
+	z=-(x+y);
+	printf("-(x+y)=",z);
+}
+
+int factor(int x)
+{
+	if(x==0)
+	{
+		return(1);
+	}
+	if(x!=0)
+	{
+		return(factor(x-1) * x);
+	}
+}
+
+
+int getmod(int x, int y)
+{
+	do
+	{
+	    x = x - y;
+	}
+	while(x >= y)
+
+	return(x);
+}
+
+
+int fib(int n)
+{
+	if(n == 0)
+        return(1);
+    if(n == 1)
+        return(1);
+	return(fib(n-1) + fib(n-2));
+}
+
+
+void test_array(){
+    int a[12];
+    int i;
+    char s[3];
+    a[0]=20;
+    a[1]=10;
+    a[2*5]=1;
+    i=10;
+    printf("a[10]=");
+    printf(a[10]);
+    a[i]=100;
+    printf("a[i]=");
+    printf(a[10]);
+    s[0]='h';
+    s[1]='i';
+    printf(s[0]);
+    printf(s[1]);
+
+    printf("test_array success!\n");
+
+
+}
+
+void test_array2()
+{
+	char c[1];
+	c[0]=32;
+	printf('c');
+	c[0]=33;
+	printf('c');
+	c[0]=35;
+	do
+	{
+		printf(c);
+		c[0]=c[0]+1;
+	}
+	while(c[0]<=127)
+	printf("a");
+	printf("a");
+	printf("a");
+}
+
+void main()
+{
+    const char char1='a';
+    const int int1 = 10;
+    int int2;
+    int int3;
+    int int4;
+    int int5;
+    int int6;
+    int int7,int8;
+	int count;
+    char charvar;
+    int intvar;
+
+    int2=2;
+    int3=3;
+
+    test_constdecl_constdef();
+    printf("test_constdecl_constdef end!\n");
+
+    test_vardecl_vardef();
+    printf("test_vardecl_vardef end!\n");
+
+    test_array();
+    printf("test_array end!\n");
+	
+	test_array2();
+	printf("test_array2 end!\n");
+
+    charvar = test_charfunc(char1);
+	printf(charvar);
+    printf("test_charfunc and return success!\n");
+
+    intvar = test_intfunc(int1,int2);
+	printf(intvar);
+    printf("test_intfunc and return success!\n");
+
+    test_voidfunc(int2);
+    printf("test_void_func end!\n");
+
+    test_scanf();
+    printf("test_scanf end!\n");
+
+    test_case1(int3);
+    printf("test case1 end!\n");
+
+	scanf(count);
+	test_case2(count);
+	printf("test case2 end!\n");
+
+
+    printf("***************simple test end************");
+    printf("***************start complex test*********");
+
+    scanf(int4);
+    printf(factor(int4));
+    printf("factor success!\n");
+
+
+    scanf(int6);
+    printf(fib(int6));
+    printf("fib success!\n");
+
+    
+
+}
